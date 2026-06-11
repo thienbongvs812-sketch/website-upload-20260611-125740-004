@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影片搜索-高清影视资源库</title>
+    <meta name="description" content="免费看在线精品亚洲一区二区高清视频资源库，收录全网热门影视剧大全，支持高清流畅在线播放，无广告打扰，让你轻松观看最新电影、电视剧及热门剧集。">
+    <meta name="keywords" content="免费看在线精品亚洲一区二区高清视频, 全网热门影视剧大全, 在线免费播放电影电视剧, 高清影视资源库, 流畅无广告观影平台, 最新热门影视全集, 免费追剧网站">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="nav-shell">
+        <a class="brand" href="./index.html" aria-label="高清影视资源库">
+            <span class="brand-icon">▶</span>
+            <span>高清影视资源库</span>
+        </a>
+        <nav class="desktop-nav">
+            <a href="./index.html" class="">首页</a>
+            <a href="./categories.html" class="">分类</a>
+            <a href="./category-domestic-series.html" class="">国产剧集</a><a href="./category-domestic-movies.html" class="">国产电影</a><a href="./category-japan-korea.html" class="">日韩影视</a><a href="./category-western.html" class="">欧美影视</a>
+            <a href="./ranking.html" class="">排行榜</a>
+        </nav>
+        <form class="top-search" data-search-form action="./search.html">
+            <input type="search" name="q" placeholder="搜索影片..." autocomplete="off">
+            <button type="submit">搜索</button>
+        </form>
+        <button class="mobile-toggle" type="button" aria-label="展开导航" data-mobile-toggle>☰</button>
+    </div>
+    <div class="mobile-panel" data-mobile-panel>
+        <a href="./index.html">首页</a>
+        <a href="./categories.html">分类总览</a>
+        <a href="./category-domestic-series.html">国产剧集</a><a href="./category-domestic-movies.html">国产电影</a><a href="./category-japan-korea.html">日韩影视</a><a href="./category-western.html">欧美影视</a>
+        <a href="./ranking.html">排行榜</a>
+        <a href="./search.html">搜索</a>
+    </div>
+</header>
+<main>
+<section class="page-hero compact-hero search-hero">
+    <div class="section-inner">
+        <span class="section-kicker">Search</span>
+        <h1>影片搜索</h1>
+        <p>输入片名、类型、地区、年份或标签，快速查找想看的影视内容。</p>
+        <form class="wide-search mini search-page-form" data-search-page-form>
+            <input type="search" name="q" placeholder="输入关键词搜索" autocomplete="off">
+            <button type="submit">搜索</button>
+        </form>
+    </div>
+</section>
+<section class="section-block">
+    <div class="section-inner">
+        <div class="search-status" data-search-status></div>
+        <div class="movie-grid" id="searchResults"></div>
+    </div>
+</section>
+
+</main>
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div>
+            <a class="brand footer-brand" href="./index.html">
+                <span class="brand-icon">▶</span>
+                <span>高清影视资源库</span>
+            </a>
+            <p>免费看在线精品亚洲一区二区高清视频资源库，收录全网热门影视剧大全，支持高清流畅在线播放，无广告打扰，让你轻松观看最新电影、电视剧及热门剧集。</p>
+        </div>
+        <div class="footer-links">
+            <a href="./index.html">首页</a>
+            <a href="./categories.html">分类</a>
+            <a href="./ranking.html">排行榜</a>
+            <a href="./search.html">搜索</a>
+        </div>
+    </div>
+    <div class="copyright">© 2026 高清影视资源库 版权所有</div>
+</footer>
+<script src="./assets/search-data.js" defer></script>
+<script src="./assets/site.js" defer></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

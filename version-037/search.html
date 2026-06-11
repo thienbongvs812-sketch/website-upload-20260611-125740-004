@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>搜索 - 必看电影</title>
+  <meta name="description" content="搜索电影、剧集、年份、地区、类型、标签和简介关键词，快速找到可在线观看的高清影视内容。">
+  <meta name="keywords" content="最新国产影视免费在线高清 - 电视剧电影大全-必看电影,国产,视频,免费,在线观看,高清,影视大全">
+  <meta property="og:title" content="搜索 - 必看电影">
+  <meta property="og:description" content="搜索电影、剧集、年份、地区、类型、标签和简介关键词，快速找到可在线观看的高清影视内容。">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-inner">
+    <a class="logo" href="./index.html" aria-label="必看电影">
+      <span class="logo-mark">▶</span>
+      <span>必看电影</span>
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="./index.html" class="">首页</a>
+      <a href="./movies.html" class="">全部影片</a>
+      <a href="./categories.html" class="">分类</a>
+      <a href="./rankings.html" class="">排行榜</a>
+      <a href="./search.html" class="is-active">搜索</a>
+    </nav>
+    <form class="header-search" action="./search.html" method="get" data-search-form>
+      <input type="search" name="q" placeholder="搜索电影、剧集、类型" aria-label="搜索">
+      <button type="submit">⌕</button>
+    </form>
+    <button class="mobile-toggle" type="button" data-mobile-toggle aria-label="打开菜单">☰</button>
+  </div>
+  <nav class="mobile-menu" data-mobile-menu aria-label="移动导航">
+    <a href="./index.html">首页</a>
+    <a href="./movies.html">全部影片</a>
+    <a href="./categories.html">分类</a>
+    <a href="./rankings.html">排行榜</a>
+    <a href="./search.html">搜索</a>
+  </nav>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="page-shell">
+    <div class="breadcrumb"><a href="./index.html">首页</a><span>/</span><span>搜索</span></div>
+    <h1 class="page-title">影片搜索</h1>
+    <p class="page-desc">输入片名、地区、年份、类型或标签关键词，快速定位全站影片。</p>
+  </div>
+</section>
+  <section class="section">
+    <div class="page-shell">
+      <form class="search-main" action="search.html" method="get" data-search-main>
+        <input type="search" name="q" data-search-page-input placeholder="搜索电影、剧集、类型、标签" aria-label="搜索关键词">
+        <button type="submit">搜索</button>
+      </form>
+      <div class="section compact">
+        <div class="empty-state" data-search-empty>没有找到符合条件的影片。</div>
+        <div class="movie-grid" data-search-results></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <strong>必看电影</strong>
+      <span>汇聚最新国产影视资源，提供免费在线高清观看，并建立电视剧电影大全。平台资源丰富，分类清晰，播放体验优良，是观看国产内容的理想场所。</span>
+    </div>
+    <div class="footer-links">
+      <a href="./index.html">首页</a>
+      <a href="./movies.html">全部影片</a>
+      <a href="./categories.html">分类</a>
+      <a href="./rankings.html">排行榜</a>
+    </div>
+  </div>
+</footer>
+
+<script src="./assets/search-index.js" defer></script>
+<script src="./assets/app.js" defer></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
